@@ -359,7 +359,7 @@
              if(error.length > 0) {
                error.forEach(err => {
                     const div = document.createElement('div');
-                    div.style.width = '80%';
+                    div.style.width = '100%';
                     div.style.padding = '10px 8px';
                     div.style.backgroundColor = 'green';
                     div.style.color = '#fff';
@@ -367,7 +367,7 @@
                     div.style.borderRadius = '4px';
                     div.textContent = err ;
                     mainContainer.append(div);
-                    setTimeout(() => div.remove(), 4000 );
+                    setTimeout(() => div.remove(), 5000 );
                });
                error.length = 0 ;
                return
